@@ -1,17 +1,70 @@
-<<<<<<< HEAD
-# React + Vite
+🛍️ Documentação — Aplicação E-commerce em React (Sem Carrinho)
+📌 Visão Geral
+Esta é uma aplicação de e-commerce desenvolvida em React com foco na exibição de produtos. O sistema permite:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Listar produtos de uma API externa
 
-Currently, two official plugins are available:
+Visualizar detalhes individuais de cada produto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Utilizar navegação entre páginas com React Router
 
-## Expanding the ESLint configuration
+🚀 Tecnologias Utilizadas
+React
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Ecommerce
-Projeto de ecommerce feito com React/Vannila
->>>>>>> 33103cf1615ec83637ad07c52aa4e058f3f36522
+React Router DOM – para rotas e navegação
+
+CSS Modules – para estilização dos componentes
+
+FakeStore API – simulação de dados reais de e-commerce
+
+
+⚙️ Funcionalidades
+✅ Listagem de Produtos (ListProducts)
+Usa fetch ou axios para buscar os produtos em https://fakestoreapi.com/products
+
+Exibe:
+
+Imagem do produto
+
+Título
+
+Botão “Mais informações” que leva para a página de detalhes
+
+✅ Página de Detalhes (ProducstId)
+Captura o id do produto via useParams
+
+Faz requisição para https://fakestoreapi.com/products/:id
+
+Mostra:
+
+Imagem
+
+Título
+
+Preço
+
+Descrição
+
+Categoria
+
+🔁 Fluxo de Navegação
+Usuário acessa a página inicial (/) e visualiza a lista de produtos.
+
+Ao clicar em “Mais informações”, é redirecionado para /productsId/:id.
+
+Nessa página, os detalhes completos do produto são exibidos.
+
+🎨 Estilização
+Estilização feita com CSS Modules (App.module.css, listProducts.module.css, etc.)
+
+Layout responsivo utilizando Flexbox
+
+Cores e tipografia simples e agradáveis
+
+📡 API utilizada
+Todos os dados são obtidos da FakeStore API:
+
+Listar todos os produtos: GET /products
+
+Buscar um produto por ID: GET /products/:id
+
