@@ -1,4 +1,6 @@
+```mermaid
 🛍️ Documentação — Aplicação E-commerce em React (Sem Carrinho)
+
 📌 Visão Geral
 Esta é uma aplicação de e-commerce desenvolvida em React com foco na exibição de produtos. O sistema permite:
 
@@ -67,4 +69,4 @@ Todos os dados são obtidos da FakeStore API:
 Listar todos os produtos: GET /products
 
 Buscar um produto por ID: GET /products/:id
-
+```
